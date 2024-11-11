@@ -10,7 +10,7 @@ To create conda environment follow the following steps:
 
 Open up Anaconda Prompt on windows, on linux and macOS open up terminal and run following commands one by one
 
-```conda create -n yolo_tutorial```
+```conda create -n yolo_tutorial python=3.10```
 
 ```conda activate yolo_tutorial```
 
