@@ -51,7 +51,7 @@ Once docker container is started head over to vscode and attach the container in
 If get authorization issue then add docker in the authorized list for the xhost ```xhost +local:docker```
 
 
-**Install pip**
+**Install pip inside docker container**
 
 ```apt-get update```
 
