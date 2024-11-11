@@ -88,3 +88,5 @@ For inference we can use any images or videos but for training and evaluating a 
         └── b1ceb32e-813f84b2.txt
 
 Yolo alogorithms assume the annotations in a .txt file. The annotation format inside an annotation file should be like:```c x_center y_center w h```. where `c` is the object class, `x_center` and `y_center` are box center point while `w` and `h` are box height and box width respectively. The box coordinates should also be normalized with height and width of image. Image and the label files should be in the same directory.
+
+Dataset can be downloaded from here (3 class BDD dataset): [Link text](https://drive.google.com/drive/folders/1DXNAiwh9OKfuP6fPPZe-YNEazCekwuZi?usp=sharing)
