@@ -93,13 +93,13 @@ Dataset can be downloaded from here (3 class BDD dataset): [Link text](https://d
 
 **How to prepare the data for training and inference?**
 
-Ultralytics package now provides an option to use the directory paths in the data config file for training and validation. Only thing is to make sure the images and labels are avialable in the same path. ALternatively use following linux commands to make the train.txt and val.txt first:
+Ultralytics package now provides an option to use the directory paths in the data config file for training and validation. Only thing is to make sure the images and labels are avialable in the same path. ALternatively use following linux commands to make the `train.txt` and `val.txt` first:
 
-**For train.txt:** ```find full/path/to/train/folder | grep .jpg > path/to save/location/train.txt```
+**For `train.txt`:** ```find full/path/to/train/folder | grep .jpg > path/to save/location/train.txt```
 
-**For val.txt:** ```find full/path/to/val/folder | grep .jpg > path/to save/location/val.txt```
+**For `val.txt`:** ```find full/path/to/val/folder | grep .jpg > path/to save/location/val.txt```
 
-Make sure to provide the full path to `find` otherwise the YOLO will trough Path errors. Also, make sure to keep the label files in the same folder. Now update the `data.yaml` with the paths of your train.txt and val.txt. The train.txt or val.txt look like following:
+Make sure to provide the full path to `find` otherwise the YOLO will trough Path errors. Also, make sure to keep the label files in the same folder. Now update the `data.yaml` with the paths of your `train.txt` and `val.txt`. The `train.txt` or `val.txt` look like following:
 
 ```
 1 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b2bee3e1-80c787bd.jpg
@@ -109,4 +109,4 @@ Make sure to provide the full path to `find` otherwise the YOLO will trough Path
 5 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b9fb5382-990e8173.jpg
 ```
 
-To choose a subset of your full training or validation data you can use `sed` or `shuf` with appropriate options to make train.txt and val.txt files containing only the subset of original data.
+To choose a subset of your full training or validation data you can use `sed` or `shuf` with appropriate options to make `train.txt` and `val.txt` files containing only the subset of original data.
