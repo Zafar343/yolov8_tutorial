@@ -120,3 +120,7 @@ Preapare the data for training and validation by following the above guide. Once
 Use `--cfg` and give a config file (`yolov8n.yaml`) instead, if you are traying to train from scratch.
 
 For validation only run:  ```python3 val.py --model yolov8n.pt```
+
+For running object tracking: ```pyhton3 track.py --model yolov8n.pt --source 0```
+
+use the path of video instead of `0` if doing tracking on a video
