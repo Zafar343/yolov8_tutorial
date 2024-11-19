@@ -90,3 +90,20 @@ For inference we can use any images or videos but for training and evaluating a 
 Yolo alogorithms assume the annotations in a .txt file. The annotation format inside an annotation file should be like:```c x_center y_center w h```. where `c` is the object class, `x_center` and `y_center` are box center point while `w` and `h` are box height and box width respectively. The box coordinates should also be normalized with height and width of image. Image and the label files should be in the same directory.
 
 Dataset can be downloaded from here (3 class BDD dataset): [Link text](https://drive.google.com/drive/folders/1DXNAiwh9OKfuP6fPPZe-YNEazCekwuZi?usp=sharing)
+
+**How to prepare the data for training and inference?**
+
+Ultralytics package now provides an option to use the directory paths in the data config file for training and validation. Only thing is to make sure the images and labels are avialable in the same path. ALternatively use following linux commands to make the train.txt and val.txt first:
+
+**For train.txt:** ```find full/path/to/train/folder | grep .jpg > path/to save/location/train.txt```
+
+**For val.txt:** ```find full/path/to/val/folder | grep .jpg > path/to save/location/val.txt```
+
+Make sure to provide the full path to `find` otherwise the YOLO will trough Path errors. Also, make sure to keep the label files in the same folder. Now update the `data.yaml` with the paths of your train.txt and val.txt. The train.txt or val.txt look like following:
+
+```
+1 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b2bee3e1-80c787bd.jpg
+2 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b6663f36-805c1a0e.jpg
+3 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b248306f-a5089e94.jpg
+4 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b7ad967b-5ffacb53.jpg
+5 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b9fb5382-990e8173.jpg```
