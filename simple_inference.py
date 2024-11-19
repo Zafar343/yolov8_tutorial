@@ -21,7 +21,7 @@ cv2.waitKey()
 cv2.destroyAllWindows()
 
 # perform inference
-results = model(image)
+results = model(image, verbose=False)
 # preds   = model.predict(image, conf=0.2, save_txt=True, save_conf=True)
 
 # # Assuming `true_labels` is a list of your true labels for the test set
