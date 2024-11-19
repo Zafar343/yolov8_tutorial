@@ -108,3 +108,5 @@ Make sure to provide the full path to `find` otherwise the YOLO will trough Path
 4 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b7ad967b-5ffacb53.jpg
 5 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b9fb5382-990e8173.jpg
 ```
+
+To choose a subset of your full training or validation data you can use `sed` or `shuf` with appropriate options to make train.txt and val.txt files containing only the subset of original data.
