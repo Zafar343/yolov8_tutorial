@@ -1,4 +1,4 @@
-train: /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/train10k.txt
-val: /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val1k.txt
+train: /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/train
+val: /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val
 nc: 3  # number of classes
 names: ["Vehicle", "Rider", "Pedestrian"]

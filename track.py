@@ -22,7 +22,18 @@ def track():
 
             # Visualize the results on the frame
             annotated_frame = trackerRslts[0].plot()
+            
+            # Tips for project
+            # get the predictions and extract the track id
+            # make history buffer to store the predictions based on their Ids: {id: [[x y x y c cnf],[],[],[],[]]}
+            # For direction simply take the difference of current box with box 5 frames ago and check if difference
+            # is positive or negative to specify the appropriate direction
+            # for left right use x coordinates of box and for forward/backward use y coordinates
+            # for speed estimation clculate the euclidean distance usinf box coordinates: d = sqrt((x_2-x_1)^2 + (y_2-y_1)^2)
+            # use following formula to calculate the speed of object s = (d/t)*(1/h), d comes from above it is distance
+            # t is time can be obtained from video frame rate and h is box height, you can also use box width as well for vehicles
 
+            # estimate the speed and direction
             # Display the annotated frame
             cv2.imshow("YOLO11 Tracking", annotated_frame)
 
