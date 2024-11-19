@@ -110,3 +110,13 @@ Make sure to provide the full path to `find` otherwise the YOLO will trough Path
 ```
 
 To choose a subset of your full training or validation data you can use `sed` or `shuf` with appropriate options to make `train.txt` and `val.txt` files containing only the subset of original data.
+
+## Training on custom data
+
+Preapare the data for training and validation by following the above guide. Once every thing is ready run the following command.
+
+```python3 train.py --model yolov8n.pt```
+
+Use `--cfg` and give a config file (`yolov8n.yaml`) instead, if you are traying to train from scratch.
+
+For validation only run:  ```python3 val.py --model yolov8n.pt```
