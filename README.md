@@ -106,4 +106,5 @@ Make sure to provide the full path to `find` otherwise the YOLO will trough Path
 2 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b6663f36-805c1a0e.jpg
 3 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b248306f-a5089e94.jpg
 4 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b7ad967b-5ffacb53.jpg
-5 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b9fb5382-990e8173.jpg```
+5 /home/zafar/old_pc/data_sets/BDD_dataset/Bdd_uncleaned/3class_bdd/val/b9fb5382-990e8173.jpg
+```
