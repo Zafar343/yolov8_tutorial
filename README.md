@@ -1,5 +1,5 @@
 # Yolov8 Tutorial
-This Jupyter Notebook will provide the basic tutorial on how to get started with yolov8 model. We will start by creating a development environment (conda or docker).
+For getting started with yolov8 inference, training and validation We will first create a development environment (conda or docker).
 
 ### Making a conda environment
 I assume anaconda already installed if not head over to anconda website and follow the instructions to install the anaconda.
